@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Klientów</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+<table id="dataTable">
+    <thead>
+    <tr>
+        <th>PESEL</th>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+    </tr>
+    </thead>
+
+    <script>
+        $(document).ready(function(){
+            $.get("http://localhost:8080/Klienci", function(data){
+                console.log(data);
+                $('#dataTable').DataTable({
+                    data: data,
+                    columns: [
+                        {data: 'pesel'},
+                        {data: 'imie'},
+                        {data: 'nazwisko'}
+                    ]
+                })
+            })
+        })
+    </script>
+</table>
+
+</body>
+</html>

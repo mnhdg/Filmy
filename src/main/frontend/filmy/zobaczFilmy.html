@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Filmów</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+<table id="dataTable">
+    <thead>
+    <tr>
+        <th>ID Filmu</th>
+        <th>Tytuł</th>
+        <th>Kraj produkcji</th>
+        <th>Gatunek</th>
+        <th>Cena</th>
+    </tr>
+    </thead>
+
+    <script>
+        $(document).ready(function(){
+            $.get("http://localhost:8080/Filmy", function(data){
+                console.log(data);
+                $('#dataTable').DataTable({
+                    data: data,
+                    columns: [
+                        {data: 'id_filmu'},
+                        {data: 'tytul'},
+                        {data: 'kraj_produkcji'},
+                        {data: 'gatunek'},
+                        {data: 'cena'}
+                    ]
+                })
+            })
+        })
+    </script>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.center {
+    text-align: center;
+}
+
+body {
+    background-image: url("https://i.imgur.com/jymOTP7.jpg");
+    background-size: 1500px 847px;
+}
+
+.button {
+    background-color: #9298ca;
+    color: #1a1a4e;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #1a1a4e;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.button:hover {opacity: 1}
+
+a:link {
+    text-decoration: none;
+    color: #1a1a4e;
+    font-weight: bold;
+}
+
+h1 {
+    color: #ee334b;
+    font-family: "Franklin Gothic Heavy";
+    font-size: 275%;
+    text-shadow: 2px 2px #2e0006;
+}
+
+
+.label {
+    display: inline-block;
+    width: 100px;
+}
