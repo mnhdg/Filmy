@@ -36,6 +36,13 @@ h1 {
     text-shadow: 2px 2px #2e0006;
 }
 
+p2 {
+    color: #ee334b;
+    font-family: "Franklin Gothic Heavy";
+    font-size: 15px;
+    padding: 5px;
+}
+
 
 .label {
     display: inline-block;
