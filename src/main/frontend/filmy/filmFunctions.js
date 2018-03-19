@@ -5,9 +5,9 @@ $(document).ready(function () {
             url: "http://localhost:8080/filmy",
             type: 'POST',
             data: JSON.stringify({
-                "id": document.getElementById("id").value,
+                "id_filmu": document.getElementById("id1").value,
                 "tytul": document.getElementById("ty").value,
-                "kraj": document.getElementById("kr").value,
+                "kraj_produkcji": document.getElementById("kr").value,
                 "gatunek": document.getElementById("gt").value,
                 "cena": document.getElementById("cn").value
             }),

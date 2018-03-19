@@ -9,7 +9,7 @@ import static filmy.tables.Filmy.FILMY;
 import java.util.List;
 
 @RestController
-
+@CrossOrigin(origins = "http://localhost:63342")
 public class FilmyController {
     @Autowired
     private DSLContext jooq;

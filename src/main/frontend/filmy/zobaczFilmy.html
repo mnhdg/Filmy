@@ -22,7 +22,7 @@
 
     <script>
         $(document).ready(function(){
-            $.get("http://localhost:8080/Filmy", function(data){
+            $.get("http://localhost:8080/filmy", function(data){
                 console.log(data);
                 $('#dataTable').DataTable({
                     data: data,

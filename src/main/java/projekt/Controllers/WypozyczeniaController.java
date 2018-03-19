@@ -10,7 +10,7 @@ import static filmy.tables.Wypozyczenia.WYPOZYCZENIA;
 import java.util.List;
 
 @RestController
-
+@CrossOrigin(origins = "http://localhost:63342")
 public class WypozyczeniaController {
 
     @Autowired
